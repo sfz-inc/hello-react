@@ -7,6 +7,9 @@ sudo: required
 services:
   - docker
   
+before_install:
+  - docker build -t sfz-inc/hello-react .
+
 notifications:
   webhooks:
     urls:
